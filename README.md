@@ -1,2 +1,2 @@
-# [The Blockchain Collaborative at Baylor University]("https://tbcollaborative.vercel.app/")
-We are The Blockchain Collaborative at Baylor University — an organization dedicated to raising the next generation of blockchain developers and innovators. Our mission is simple: we want to make the world a better place, and we are realizing our vision by advancing the blockchain community through our passions for research, education, and engineering.
+# The Blockchain Collaborative at Baylor University
+We are [The Blockchain Collaborative at Baylor University]("https://tbcollaborative.vercel.app/") — an organization dedicated to raising the next generation of blockchain developers and innovators. Our mission is simple: we want to make the world a better place, and we are realizing our vision by advancing the blockchain community through our passions for research, education, and engineering.
