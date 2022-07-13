@@ -4,6 +4,12 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-newsletter.jpg'
 
+import { PopupButton } from '@typeform/embed-react'
+
+// https://discord.gg/EzBpDrNYa7 DISCORD
+// https://cfy2dkiqhp9.typeform.com/to/K79B5cdo JOIN
+// https://cfy2dkiqhp9.typeform.com/to/RbfWKOhX CONTACT
+
 function ArrowRightIcon(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" {...props}>
@@ -38,28 +44,16 @@ export function Newsletter() {
                 Connect with us!
               </p>
               <p className="mt-4 text-lg tracking-tight text-pink-900">
-                Feel free to connect with us using the links provided below.
+                If you are interested in collaborating with us, or have any questions, please
+                use the link below to get in contact with us.
               </p>
             </div>
             <form>
-              <h3 className="text-lg font-semibold tracking-tight text-pink-900">
-                Sign up to our newsletter <span aria-hidden="true">&darr;</span>
+              <h3 className="text-lg font-semibold tracking-tight text-pink-600 hover:text-pink-900">
+                <PopupButton id="RbfWKOhX" style={{ fontSize: 20 }} className="my-button">
+                  Sign up to our newsletter <span aria-hidden="true">&#8594;</span>
+                </PopupButton>
               </h3>
-              <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-pink-900/5 focus-within:ring-2 focus-within:ring-pink-900">
-                <input
-                  type="email"
-                  required
-                  placeholder="Email address"
-                  aria-label="Email address"
-                  className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none"
-                />
-                <Button type="submit">
-                  <span className="sr-only sm:not-sr-only">Sign up today</span>
-                  <span className="sm:hidden">
-                    <ArrowRightIcon className="h-6 w-6" />
-                  </span>
-                </Button>
-              </div>
             </form>
           </div>
         </div>

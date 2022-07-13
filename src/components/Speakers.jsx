@@ -146,9 +146,9 @@ export function Speakers() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-pink-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter sm:text-5xl text-pink-600"
           >
-            Noteworthy mentions
+            Notable mentions
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-pink-900">
             Meet the people who make The Blockchain Collaborative possible.
