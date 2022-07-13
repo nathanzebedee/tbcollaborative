@@ -52,7 +52,7 @@ export function Newsletter() {
               <div className='flex items-center'>
                 <h3 className="text-lg font-semibold tracking-tight text-pink-600 hover:text-pink-900">
                   <a href='https://discord.gg/EzBpDrNYa7' target='_blank' rel='noreferrer' id="RbfWKOhX" style={{ fontSize: 20 }} className="my-button">
-                    Get in contact with us <span aria-hidden="true">&#8594;</span>
+                    Join our Discord server <span aria-hidden="true">&#8594;</span>
                   </a>
                 </h3>
               </div>
