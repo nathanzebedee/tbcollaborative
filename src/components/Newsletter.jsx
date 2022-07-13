@@ -51,7 +51,7 @@ export function Newsletter() {
             <form>
               <h3 className="text-lg font-semibold tracking-tight text-pink-600 hover:text-pink-900">
                 <PopupButton id="RbfWKOhX" style={{ fontSize: 20 }} className="my-button">
-                  Sign up to our newsletter <span aria-hidden="true">&#8594;</span>
+                  Get in contact with us <span aria-hidden="true">&#8594;</span>
                 </PopupButton>
               </h3>
             </form>
