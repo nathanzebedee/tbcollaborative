@@ -41,7 +41,7 @@ export function Newsletter() {
                 Feel free to connect with us using the links provided below.
               </p>
             </div>
-            {/* <form>
+            <form>
               <h3 className="text-lg font-semibold tracking-tight text-pink-900">
                 Sign up to our newsletter <span aria-hidden="true">&darr;</span>
               </h3>
@@ -60,27 +60,7 @@ export function Newsletter() {
                   </span>
                 </Button>
               </div>
-            </form> */}
-            <div className='flex justify-between'>
-              <Button href='https://discord.gg/EzBpDrNYa7' target='_blank' rel='noreferrer' type="submit">
-                <span className="sr-only sm:not-sr-only">Join our discord</span>
-                <span className="sm:hidden">
-                  <ArrowRightIcon className="h-6 w-6" />
-                </span>
-              </Button>
-              <Button href='https://cfy2dkiqhp9.typeform.com/to/K79B5cdo' target='_blank' rel='noreferrer' type="submit">
-                <span className="sr-only sm:not-sr-only">Join our club</span>
-                <span className="sm:hidden">
-                  <ArrowRightIcon className="h-6 w-6" />
-                </span>
-              </Button>
-              <Button href='https://cfy2dkiqhp9.typeform.com/to/RbfWKOhX' target='_blank' rel='noreferrer' type="submit">
-                <span className="sr-only sm:not-sr-only">Contact us</span>
-                <span className="sm:hidden">
-                  <ArrowRightIcon className="h-6 w-6" />
-                </span>
-              </Button>
-            </div>
+            </form>
           </div>
         </div>
       </Container>
