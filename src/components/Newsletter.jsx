@@ -46,16 +46,16 @@ export function Newsletter() {
                 </p>
                 <p className="mt-4 text-lg tracking-tight text-pink-900">
                   If you want to learn more about us and what we do, join or Discord
-                  server and get involved with the organization using the link below!
+                  server and get involved with the organization using the link provided!
                 </p>
               </div>
-              <form>
+              <div className='flex items-center'>
                 <h3 className="text-lg font-semibold tracking-tight text-pink-600 hover:text-pink-900">
                   <a href='https://discord.gg/EzBpDrNYa7' target='_blank' rel='noreferrer' id="RbfWKOhX" style={{ fontSize: 20 }} className="my-button">
                     Get in contact with us <span aria-hidden="true">&#8594;</span>
                   </a>
                 </h3>
-              </form>
+              </div>
             </div>
           </div>
         </Container>
