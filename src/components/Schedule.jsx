@@ -16,7 +16,7 @@ const schedule = [
       {
         name: 'Nathan Hennigh',
         description: 'HSB - Room 100',
-        day: 'Tuesday (every other)',
+        day: 'Tuesday (alternating bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
       },
@@ -31,7 +31,7 @@ const schedule = [
       {
         name: 'Nathan Galindo',
         description: 'HSB - Room 100',
-        day: 'Tuesday (every other)',
+        day: 'Tuesday (alternating bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
       },
@@ -46,7 +46,7 @@ const schedule = [
       {
         name: 'Officers',
         description: 'HSB - Room 100',
-        day: 'Thursday (every other)',
+        day: 'Thursday (bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
       },
