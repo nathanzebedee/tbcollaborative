@@ -8,8 +8,8 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
-    date: 'Educational Workshops',
-    dateTime: '2022-04-04',
+    event: 'Educational Workshops',
+    eventTime: '2022-04-04',
     summary:
       'Non-technical classes that improve your understanding of blockchain.',
     timeSlots: [
@@ -23,8 +23,8 @@ const schedule = [
     ],
   },
   {
-    date: 'Engineering Labs',
-    dateTime: '2022-04-05',
+    event: 'Engineering Labs',
+    eventTime: '2022-04-05',
     summary:
       'Technical classes where we program using blockchain technologies.',
     timeSlots: [
@@ -38,13 +38,13 @@ const schedule = [
     ],
   },
   {
-    date: 'General Meetings',
-    dateTime: '2022-04-06',
+    event: 'General Meetings',
+    eventTime: '2022-04-06',
     summary:
       'Fireside chats and speaker events about all things blockchain.',
     timeSlots: [
       {
-        name: 'Group led',
+        name: 'Officers',
         description: 'HSB - Room 100',
         day: 'Thursday (every other)',
         start: '6:30PM',
@@ -58,17 +58,18 @@ function ScheduleTabbed() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
-    let smMediaQuery = window.matchMedia('(min-width: 640px)')
-
-    function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(smMediaQuery)
-    smMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      smMediaQuery.removeEventListener('change', onMediaQueryChange)
+    if (typeof (window) === 'undefined') {
+      let smMediaQuery = window.matchMedia('(min-width: 640px)')
+      function onMediaQueryChange({ matches }) {
+        setTabOrientation(matches ? 'vertical' : 'horizontal')
+      }
+  
+      onMediaQueryChange(smMediaQuery)
+      smMediaQuery.addEventListener('change', onMediaQueryChange)
+  
+      return () => {
+        smMediaQuery.removeEventListener('change', onMediaQueryChange)
+      }
     }
   }, [])
 
@@ -82,7 +83,7 @@ function ScheduleTabbed() {
         {({ selectedIndex }) =>
           schedule.map((day, dayIndex) => (
             <div
-              key={day.dateTime}
+              key={day.eventTime}
               className={clsx(
                 'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
                 dayIndex !== selectedIndex && 'opacity-70'
@@ -91,10 +92,10 @@ function ScheduleTabbed() {
               <DaySummary
                 day={{
                   ...day,
-                  date: (
+                  event: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {day.date}
+                      {day.event}
                     </Tab>
                   ),
                 }}
@@ -106,7 +107,7 @@ function ScheduleTabbed() {
       <Tab.Panels>
         {schedule.map((day) => (
           <Tab.Panel
-            key={day.dateTime}
+            key={day.eventTime}
             className="[&:not(:focus-visible)]:focus:outline-none"
           >
             <TimeSlots day={day} />
@@ -121,7 +122,7 @@ function DaySummary({ day }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-pink-900">
-        <time dateTime={day.dateTime}>{day.date}</time>
+        <time eventTime={day.eventTime}>{day.event}</time>
       </h3>
       <p className="mt-1.5 text-base tracking-tight text-pink-900">
         {day.summary}
@@ -147,8 +148,8 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-pink-900">
-            {timeSlot.name}
+          <h4 className="text-lg tracking-tight text-pink-900">
+            Lead by <span className='text-lg font-semibold'>{timeSlot.name}</span>
           </h4>
           {timeSlot.description && (
             <p className="mt-1 tracking-tight text-pink-900">
@@ -161,11 +162,11 @@ function TimeSlots({ day, className }) {
             </p>
           )}
           <p className="mt-1 font-mono text-sm text-slate-500">
-            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
+            <time eventTime={`${day.eventTime}T${timeSlot.start}-08:00`}>
               {timeSlot.start}
             </time>{' '}
             -{' '}
-            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
+            <time eventTime={`${day.eventTime}T${timeSlot.end}-08:00`}>
               {timeSlot.end}
             </time>{' '}
             CST
@@ -180,7 +181,7 @@ function ScheduleStatic() {
   return (
     <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
       {schedule.map((day) => (
-        <section key={day.dateTime}>
+        <section key={day.eventTime}>
           <DaySummary day={day} />
           <TimeSlots day={day} className="mt-10" />
         </section>
