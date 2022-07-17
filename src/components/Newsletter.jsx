@@ -50,7 +50,7 @@ export function Newsletter() {
                 </p>
               </div>
               <div className='flex items-center'>
-                <h3 className="text-lg font-semibold tracking-tight bg-pink-600 text-white rounded-xl py-1 px-4 border-2 border-transparent hover:text-pink-600 hover:bg-indigo-50 hover:border-pink-600 transition-all duration-200">
+                <h3 className="text-lg font-semibold tracking-tight bg-pink-600 text-white rounded-xl py-1 px-4 border-2 border-transparent hover:text-pink-600 hover:bg-[#faebfe] hover:border-pink-600 transition-all duration-200">
                   <a href='https://discord.gg/EzBpDrNYa7' target='_blank' rel='noreferrer' id="RbfWKOhX" style={{ fontSize: 20 }} className="my-button">
                     Join our Discord server <span className='transition-all duration-200' aria-hidden="true">&#8594;</span>
                   </a>
