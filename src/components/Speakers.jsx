@@ -5,7 +5,6 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
 import sarahDelOlmoImage from '@/images/avatars/sarah-del-olmo.jpg'
 import nathanGalindoImage from '@/images/avatars/nathan-galindo.jpg'
 import nathanHennighImage from '@/images/avatars/nathan-hennigh.jpg'
@@ -26,7 +25,7 @@ const days = [
     speakers: [
       {
         name: 'Nathan Galindo',
-        role: 'Co-President, Head of Engineering',
+        role: 'Co-President Head of Engineering',
         url: 'https://www.linkedin.com/in/nathan-galindo-840835195/',
         image: nathanGalindoImage,
       },
