@@ -149,7 +149,7 @@ function TimeSlots({ day, className }) {
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
           <h4 className="text-lg tracking-tight text-pink-900">
-            Lead by <span className='text-lg font-semibold'>{timeSlot.name}</span>
+            Led by <span className='text-lg font-semibold'>{timeSlot.name}</span>
           </h4>
           {timeSlot.description && (
             <p className="mt-1 tracking-tight text-pink-900">

@@ -26,19 +26,19 @@ const days = [
     speakers: [
       {
         name: 'Nathan Galindo',
-        role: 'Co-President and Head of Engineering',
+        role: 'Co-President, Head of Engineering',
         url: 'https://www.linkedin.com/in/nathan-galindo-840835195/',
         image: nathanGalindoImage,
       },
       {
         name: 'Nathan Hennigh',
-        role: 'Co-President and Head of Research',
+        role: 'Co-President, Head of Research',
         url: 'https://www.linkedin.com/in/nathan-hennigh/',
         image: nathanHennighImage,
       },
       {
         name: 'Sarah Del Olmo',
-        role: 'Vice President and Head of Design',
+        role: 'Vice President, Head of Design and Operations',
         url: 'https://www.linkedin.com/in/sarahdelolmo/',
         image: sarahDelOlmoImage,
       },
