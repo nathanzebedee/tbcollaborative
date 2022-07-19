@@ -25,7 +25,7 @@ const days = [
     speakers: [
       {
         name: 'Nathan Galindo',
-        role: 'Co-President Head of Engineering',
+        role: 'Co-President, Head of Engineering',
         url: 'https://www.linkedin.com/in/nathan-galindo-840835195/',
         image: nathanGalindoImage,
       },
