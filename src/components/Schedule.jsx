@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background.jpg'
+import Head from 'next/head'
 
 const schedule = [
   {
@@ -94,7 +95,7 @@ function ScheduleTabbed() {
                   ...day,
                   event: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
-                      <span className="absolute inset-0" />
+                      <span className="flex justify-start absolute inset-0" />
                       {day.event}
                     </Tab>
                   ),
@@ -133,47 +134,49 @@ function DaySummary({ day }) {
 
 function TimeSlots({ day, className }) {
   return (
-    <ol
-      role="list"
-      className={clsx(
-        className,
-        'rounded-xl space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-pink-900/5 backdrop-blur'
-      )}
-    >
-      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
-        <li
-          key={timeSlot.start}
-          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} CST`}
-        >
-          {timeSlotIndex > 0 && (
-            <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
-          )}
-          <h4 className="text-lg tracking-tight text-pink-900">
-            Led by <span className='text-lg font-semibold'>{timeSlot.name}</span>
-          </h4>
-          {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-pink-900">
-              {timeSlot.description}
+    <>
+      <ol
+        role="list"
+        className={clsx(
+          className,
+          'rounded-xl space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-pink-900/5 backdrop-blur'
+        )}
+      >
+        {day.timeSlots.map((timeSlot, timeSlotIndex) => (
+          <li
+            key={timeSlot.start}
+            aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} CST`}
+          >
+            {timeSlotIndex > 0 && (
+              <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
+            )}
+            <h4 className="text-lg tracking-tight text-pink-900">
+              Led by <span className='text-lg font-semibold'>{timeSlot.name}</span>
+            </h4>
+            {timeSlot.description && (
+              <p className="mt-1 tracking-tight text-pink-900">
+                {timeSlot.description}
+              </p>
+            )}
+            {timeSlot.day && (
+              <p className="mt-1 tracking-tight text-pink-900">
+                {timeSlot.day}
+              </p>
+            )}
+            <p className="mt-1 font-mono text-sm text-slate-500">
+              <time eventTime={`${day.eventTime}T${timeSlot.start}-08:00`}>
+                {timeSlot.start}
+              </time>{' '}
+              -{' '}
+              <time eventTime={`${day.eventTime}T${timeSlot.end}-08:00`}>
+                {timeSlot.end}
+              </time>{' '}
+              CST
             </p>
-          )}
-          {timeSlot.day && (
-            <p className="mt-1 tracking-tight text-pink-900">
-              {timeSlot.day}
-            </p>
-          )}
-          <p className="mt-1 font-mono text-sm text-slate-500">
-            <time eventTime={`${day.eventTime}T${timeSlot.start}-08:00`}>
-              {timeSlot.start}
-            </time>{' '}
-            -{' '}
-            <time eventTime={`${day.eventTime}T${timeSlot.end}-08:00`}>
-              {timeSlot.end}
-            </time>{' '}
-            CST
-          </p>
-        </li>
-      ))}
-    </ol>
+          </li>
+        ))}
+      </ol>
+    </>
   )
 }
 
