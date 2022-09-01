@@ -46,7 +46,7 @@ const schedule = [
     timeSlots: [
       {
         name: 'Officers',
-        description: 'Foster 124',
+        description: 'Paul L. Foster 124',
         day: 'Thursday (bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
