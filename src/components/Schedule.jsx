@@ -16,7 +16,7 @@ const schedule = [
     timeSlots: [
       {
         name: 'Nathan Hennigh',
-        description: 'HSB - Room 100',
+        description: 'Hankamer Cashion Academic Center, Hankamer 355',
         day: 'Tuesday (alternating bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
@@ -31,7 +31,7 @@ const schedule = [
     timeSlots: [
       {
         name: 'Nathan Galindo',
-        description: 'HSB - Room 100',
+        description: 'Hankamer Cashion Academic Center, Hankamer 355',
         day: 'Tuesday (alternating bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
@@ -46,7 +46,7 @@ const schedule = [
     timeSlots: [
       {
         name: 'Officers',
-        description: 'HSB - Room 100',
+        description: 'Foster 124',
         day: 'Thursday (bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
