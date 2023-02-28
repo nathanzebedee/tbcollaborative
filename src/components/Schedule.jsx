@@ -16,7 +16,7 @@ const schedule = [
     timeSlots: [
       {
         name: 'Nathan Hennigh',
-        description: 'Cashion 316',
+        description: 'Foster 118',
         day: 'Tuesday (alternating bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
@@ -31,7 +31,7 @@ const schedule = [
     timeSlots: [
       {
         name: 'Nathan Galindo',
-        description: 'Cashion 316',
+        description: 'Foster 118',
         day: 'Tuesday (alternating bi-weekly)',
         start: '6:30PM',
         end: '7:30PM',
