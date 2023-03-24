@@ -31,12 +31,10 @@ export function Hero() {
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-pink-900">
             <p>
               We are The Blockchain Collaborative at Baylor University — an organization dedicated to 
-              raising the next generation of blockchain developers and innovators.
+              raising the leaders of the decentralized future.
             </p>
             <p>
-              Our mission is simple: we want to make the world a better place, and we are
-              realizing our vision by advancing the blockchain community through our passions for
-              research, education, and engineering.
+              Our mission is simple: We hope to contribute to a world where we value skills and relationships over careers and money; where we are passionate about building and creating things in a self-motivated and self-directed way.
             </p>
           </div>
           <Button target='_blank' rel='noreferrer' href="https://cfy2dkiqhp9.typeform.com/to/K79B5cdo" className="mt-10 w-full sm:hidden">
